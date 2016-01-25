@@ -12,54 +12,61 @@
 		  </div>
 		  <div class="body">
 		    <div class="flex_container">
-		      <div class="item colHeader" id="a1">
-		        <span id="col1" role="heading">Exemplary</span>
+		      <div class="item colHeader" id="col1">
+		        <span>Exemplary</span>
 		        6 POINTS
 		      </div>
-		      <div class="item colHeader" id="a2">
-		        <span id="col2" role="heading">Proficient</span>
+		      <div class="item colHeader" id="col2">
+		        <span>Proficient</span>
 		        4 POINTS
 		      </div>
-		      <div class="item colHeader" id="a3">
-		        <span id="col3" role="heading">Partially Proficient</span>
+		      <div class="item colHeader" id="col3">
+		        <span>Partially Proficient</span>
 		        2 POINTS
 		      </div>
-		      <div class="item colHeader" id="a4">
-		        <span id="col4" role="heading">Unsatisfactory</span>
+		      <div class="item colHeader" id="col4">
+		        <span>Unsatisfactory</span>
+		        0 POINTS
+		      </div>
+		      <div class="item colHeader" id="col4">
+		        <span>Unsatisfactory</span>
 		        0 POINTS
 		      </div>
 		    </div>
 		  </div>
 		</div>
-		<div class="flex_container">
+		<div class="flex_container" role="radiogroup" aria-labelledby="header1">
 		  <div class="header">
 		    <p id="header1" tabindex="0">Perspective &amp; New/Original Ideas</p>
 			<a class="addFeedback hidden" href="#">+ Feedback</a>
 		  </div>
 		  <div class="body">
 		    <div class="flex_container">
-		      <div class="item level" tabindex="0" aria-labelledby="a1" aria-describedby="description1" role="button">
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="header1 col1" aria-describedby="description1" role="radio">
 		        <p id="description1">Provides a fresh and balanced perspective on the topic.</p>
-		        <a href="#" role="button" aria-labeled-by="description1 col1 header1">Select</a>
-		      </div>
-		      <div class="item level" tabindex="0" aria-labelledby="a2" aria-describedby="description2" role="button">
+		        <!-- <a href="#" role="button">Select</a> -->
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col2" aria-describedby="description2" role="radio">
 		        <p id="description2">Provides original ideas with a minimum of personal bias.</p>
-		      </div>
-		      <div class="item level" tabindex="0" aria-labelledby="a3" aria-describedby="description3" role="button">
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col2" aria-describedby="description2" role="radio">
+		        <p id="description2">Provides original ideas with a minimum of personal bias.</p>
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col3" aria-describedby="description3" role="radio">
 		        <p id="description3">Provides one or two original ideas which include some personal bias.</p>
-		      </div>
-		      <div class="item level" tabindex="0" aria-labelledby="a4" aria-describedby="description4" role="button">
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col4" aria-describedby="description4" role="radio">
 		        <p id="description4">Does not provide any original ideas and personal bias is obvious.
 		        </p>
-		      </div>
+		      </a>
 		    </div>
 		    <div class="flex_container feedbackRow">
-		      <div class="item feedback">
-				  <a href="#" class="close">X</a>
-		        <div class="feedback__header" tabindex="0">
+		      <div class="item feedback" tabindex="0">
+				  <a href="#" class="close" aria-label="Collapse Feedback">X</a>
+		        <div class="feedback__header">
 		          criterion feedback
 		        </div>
-		        <div class="feedback__text" tabindex="0">
+		        <div class="feedback__text">
 		          <p>
 		          The science of graphical perspective uses perspectivities to make realistic images in proper proportion. According to Kirsti Andersen, the first author to describe perspectivity was Leon Alberti in his De Pictura (1435).[1] In English, Brook Taylor presented his Linear Perspective in 1715, where he explained "Perspective is the Art of drawing on a Plane the Appearances of any Figures, by the Rules of Geometry".[2] In a second book, New Principles of Linear Perspective (1719), Taylor wrote</p>
 		        </div>
@@ -73,49 +80,50 @@
 		  </div>
 		  <div class="body">
 		    <div class="flex_container">
-		      <div class="item colHeader">
-		        <span id="col1" role="heading">Exemplary</span>
+		      <div class="item colHeader" id="col1b">
+		        <span>Exemplary</span>
 		        6 POINTS
 		      </div>
-		      <div class="item colHeader">
-		        <span id="col1" role="heading">Proficient</span>
+		      <div class="item colHeader" id="col2b">
+		        <span>Proficient</span>
 		        4 POINTS
 		      </div>
-		      <div class="item colHeader">
-		        <span id="col3" role="heading">Partially Proficient</span>
+		      <div class="item colHeader" id="col3b">
+		        <span>Partially Proficient</span>
 		        2 POINTS
 		      </div>
-		      <div class="item colHeader">
-		        <span id="col4" role="heading">Unsatisfactory</span>
+		      <div class="item colHeader" id="col4b">
+		        <span>Unsatisfactory</span>
 		        0 POINTS
 		      </div>
 		    </div>
 		  </div>
 		</div>
-		<div class="flex_container">
+		<div class="flex_container" role="radiogroup" aria-labelledby="header1b">
 		  <div class="header">
-		    <p id="header1" tabindex="0">Perspective & New/Original Ideas</p>
+		    <p id="header1b" tabindex="0">Something Else</p>
 			<a class="addFeedback" href="#">+ Feedback</a>
 		  </div>
 		  <div class="body">
 		    <div class="flex_container">
-		      <div class="item level" tabindex="0">
-		        <p id="description1">Provides a fresh and balanced perspective on the topic.</p>
-		        <a href="#" role="button" aria-labeled-by="description1 col1 header1">Select</a>
-		      </div>
-		      <div class="item level" tabindex="0">
-		        <p>Provides original ideas with a minimum of personal bias.</p>
-		      </div>
-		      <div class="item level" tabindex="0">
-		        <p>Provides one or two original ideas which include some personal bias.</p>
-		      </div>
-		      <div class="item level" tabindex="0">
-		        <p>Does not provide any original ideas and personal bias is obvious.
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col1b" aria-describedby="description1b" role="radio">
+		        <p id="description1b">Provides a fresh and balanced perspective on the topic.</p>
+		        <!--<a href="#" role="button" aria-labeled-by="description1 col1 header1">Select</a>
+						-->
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col2b" aria-describedby="description2b" role="radio">
+		        <p id="description2b">Provides original ideas with a minimum of personal bias.</p>
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col3b" aria-describedby="description3b" role="radio">
+		        <p id="description3b">Provides one or two original ideas which include some personal bias.</p>
+		      </a>
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col4b" aria-describedby="description4b" role="radio">
+		        <p id="description4b">Does not provide any original ideas and personal bias is obvious.
 		        </p>
-		      </div>
+		      </a>
 		    </div>
 			<div id="secondRowFeedback" class="flex_container feedbackRow hidden">
-		      <div class="item feedback">
+		      <div class="item feedback" tabindex="0">
 				<a href="#" class="close">X</a>
 		        <div class="feedback__header">
 		          criterion feedback

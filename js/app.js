@@ -12,5 +12,6 @@ $(() => {
 	$('.item.level').on('click', function() {
 		$(this).parent().children().removeClass('selected');
 		$(this).addClass('selected');
+		$(this).attr('aria-checked', 'true');
 	});
 });

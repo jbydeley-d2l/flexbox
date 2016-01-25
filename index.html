@@ -34,6 +34,7 @@
 		<div class="flex_container">
 		  <div class="header">
 		    <p id="header1">Perspective &amp; New/Original Ideas</p>
+			<a class="addFeedback" href="#">+ Feedback</a>
 		  </div>
 		  <div class="body">
 		    <div class="flex_container">
@@ -52,8 +53,9 @@
 		        </p>
 		      </div>
 		    </div>
-		    <div class="flex_container">
+		    <div class="flex_container feedbackRow">
 		      <div class="item feedback">
+				  <a href="#" class="close">X</a>
 		        <div class="feedback__header">
 		          criterion feedback
 		        </div>
@@ -93,6 +95,7 @@
 		<div class="flex_container">
 		  <div class="header">
 		    <p id="header1">Perspective & New/Original Ideas</p>
+			<a class="addFeedback" href="#">+ Feedback</a>
 		  </div>
 		  <div class="body">
 		    <div class="flex_container">
@@ -111,15 +114,34 @@
 		        </p>
 		      </div>
 		    </div>
+			<div id="secondRowFeedback" class="flex_container feedbackRow hidden">
+		      <div class="item feedback">
+				<a href="#" class="close">X</a>
+		        <div class="feedback__header">
+		          criterion feedback
+		        </div>
+		        <div class="feedback__text">
+		          <p>
+		          The science of graphical perspective uses perspectivities to make realistic images in proper proportion. According to Kirsti Andersen, the first author to describe perspectivity was Leon Alberti in his De Pictura (1435).[1] In English, Brook Taylor presented his Linear Perspective in 1715, where he explained "Perspective is the Art of drawing on a Plane the Appearances of any Figures, by the Rules of Geometry".[2] In a second book, New Principles of Linear Perspective (1719), Taylor wrote</p>
+		        </div>
+		      </div>
+		    </div>
 		  </div>
 		</div>
-		<div class="flex_container">
-		  <div class="flex_item">
-		    test 3
-		  </div>
-		  <div class="flex_item">
-		    test 4
-		  </div>
-		</div>
+		<script id="feedbackTemplate" type="text/template">
+			<div class="flex_container">
+		      <div class="item feedback">
+		        <div class="feedback__header">
+		          criterion feedback
+		        </div>
+		        <div class="feedback__text">
+		          <p>
+		          The science of graphical perspective uses perspectivities to make realistic images in proper proportion. According to Kirsti Andersen, the first author to describe perspectivity was Leon Alberti in his De Pictura (1435).[1] In English, Brook Taylor presented his Linear Perspective in 1715, where he explained "Perspective is the Art of drawing on a Plane the Appearances of any Figures, by the Rules of Geometry".[2] In a second book, New Principles of Linear Perspective (1719), Taylor wrote</p>
+		        </div>
+		      </div>
+		    </div>
+		</script>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" charset="utf-8"></script>
+		<script src="js/app.js" charset="utf-8"></script>
 	</body>
 </html>

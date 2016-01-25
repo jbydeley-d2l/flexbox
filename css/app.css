@@ -38,6 +38,10 @@
   padding: 0 0 24px 36px;
 }
 
+.hidden {
+	display: none;
+}
+
 .feedback__header {
     text-transform: uppercase;
     padding: 14px 0px 7px 36px;
@@ -76,4 +80,14 @@
 
 .item.level:hover {
 	background-color: #ddd;
+	cursor: pointer;
+}
+
+.close {
+	float: right;
+	padding-right: 5px;
+}
+
+.selected {
+	background-color: #4378df;
 }

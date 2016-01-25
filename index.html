@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
 	</head>
 	<body>
-		<div class="flex_container rubric" role="application">
+		<div class="flex_container rubric" role="main">
 		  <div class="colHeader colHeader--first">
 
 		  </div>
@@ -28,26 +28,18 @@
 		        <span>Unsatisfactory</span>
 		        0 POINTS
 		      </div>
-		      <div class="item colHeader" id="col4">
-		        <span>Unsatisfactory</span>
-		        0 POINTS
-		      </div>
 		    </div>
 		  </div>
 		</div>
 		<div class="flex_container" role="radiogroup" aria-labelledby="header1">
 		  <div class="header">
-		    <p id="header1" tabindex="0">Perspective &amp; New/Original Ideas</p>
-			<a class="addFeedback hidden" href="#">+ Feedback</a>
-		  </div>
+		    <h3 id="header1" tabindex="0">Perspective &amp; New/Original Ideas</h3>
+				<a class="addFeedback hidden" href="#">Add Feedback</a>
+			</div>
 		  <div class="body">
 		    <div class="flex_container">
-		      <a href="#" class="item level" tabindex="0" aria-labelledby="header1 col1" aria-describedby="description1" role="radio">
+		      <a href="#" class="item level" tabindex="0" aria-labelledby="col1" aria-describedby="description1" role="radio">
 		        <p id="description1">Provides a fresh and balanced perspective on the topic.</p>
-		        <!-- <a href="#" role="button">Select</a> -->
-		      </a>
-		      <a href="#" class="item level" tabindex="0" aria-labelledby="col2" aria-describedby="description2" role="radio">
-		        <p id="description2">Provides original ideas with a minimum of personal bias.</p>
 		      </a>
 		      <a href="#" class="item level" tabindex="0" aria-labelledby="col2" aria-describedby="description2" role="radio">
 		        <p id="description2">Provides original ideas with a minimum of personal bias.</p>
@@ -101,15 +93,13 @@
 		</div>
 		<div class="flex_container" role="radiogroup" aria-labelledby="header1b">
 		  <div class="header">
-		    <p id="header1b" tabindex="0">Something Else</p>
-			<a class="addFeedback" href="#">+ Feedback</a>
-		  </div>
+		    <h3 id="header1b" tabindex="0">Something Else</h3>
+			<a class="addFeedback" href="#">Add Feedback</a>
+		</div>
 		  <div class="body">
 		    <div class="flex_container">
 		      <a href="#" class="item level" tabindex="0" aria-labelledby="col1b" aria-describedby="description1b" role="radio">
 		        <p id="description1b">Provides a fresh and balanced perspective on the topic.</p>
-		        <!--<a href="#" role="button" aria-labeled-by="description1 col1 header1">Select</a>
-						-->
 		      </a>
 		      <a href="#" class="item level" tabindex="0" aria-labelledby="col2b" aria-describedby="description2b" role="radio">
 		        <p id="description2b">Provides original ideas with a minimum of personal bias.</p>
@@ -122,9 +112,9 @@
 		        </p>
 		      </a>
 		    </div>
-			<div id="secondRowFeedback" class="flex_container feedbackRow hidden">
+			<div id="secondRowFeedback" class="flex_container feedbackRow hidden" role="alert">
 		      <div class="item feedback" tabindex="0">
-				<a href="#" class="close">X</a>
+				<a href="#" class="close" aria-label="Collapse Feedback">X</a>
 		        <div class="feedback__header">
 		          criterion feedback
 		        </div>

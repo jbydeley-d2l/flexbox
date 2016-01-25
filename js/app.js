@@ -10,8 +10,7 @@ $(() => {
 	});
 
 	$('.item.level').on('click', function() {
-		$(this).parent().children().removeClass('selected');
-		$(this).addClass('selected');
+		$(this).parent().children().removeAttr('aria-checked');
 		$(this).attr('aria-checked', 'true');
 	});
 });

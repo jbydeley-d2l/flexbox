@@ -88,6 +88,11 @@
 	padding-right: 5px;
 }
 
-.selected {
+.item[aria-checked="true"] {
 	background-color: #4378df;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
 }
